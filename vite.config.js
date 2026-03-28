@@ -12,10 +12,9 @@ export default defineConfig({
   publicDir: resolve(__dirname, 'src', 'public'),
   
   build: {
-    // Output hasil build akan berada di folder 'dist' di root proyek
-    outDir: resolve(__dirname, 'dist'),
-    emptyOutDir: true,
-  },
+  outDir: '../dist', // Naik satu level dari folder 'src' ke root proyek
+  emptyOutDir: true,
+},
   
   resolve: {
     alias: {
